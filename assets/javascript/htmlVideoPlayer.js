@@ -29,7 +29,8 @@ function updateButton() {
     toggle.textContent = icon;
 }
 function skip() {
-    console.log('skipping!');
+    //console.log('skipping!');
+    console.log(this.dataset.skip);
 }
 
 /* Hook up the event listners */
