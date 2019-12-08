@@ -23,7 +23,10 @@ function togglePlay() {
 }   
 
 function updateButton() {
-    console.log('Update the button');
+    //console.log('Update the button');
+    const icon = this.paused ? '►' : '❚ ❚';
+    console.log(icon);
+    toggle.textContent = icon;
 }
 
 /* Hook up the event listners */
