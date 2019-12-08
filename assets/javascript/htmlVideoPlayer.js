@@ -31,6 +31,13 @@ function updateButton() {
 function skip() {
     //console.log('skipping!');
     console.log(this.dataset.skip);
+    //(this.dataset.skip is a string)
+    //apply parseFloat method to convert into number.
+    video.currnetTime += parseFloat(this.dataset.skip);
+}
+
+function handleRangeUpdate() {
+    console.log(this.value);
 }
 
 /* Hook up the event listners */
@@ -40,3 +47,4 @@ video.addEventListener('pause', updateButton);
 
 toggle.addEventListener('click', togglePlay);
 skipButtons.forEach(button => button.addEventListener('click',skip));
+ranges.forEach(range => range.addEventListener('change',handleRangeUpdate));
