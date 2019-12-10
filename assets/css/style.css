@@ -77,8 +77,8 @@ section {
 
 .player__video {
   width: 100%;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
 }
 
 .player__button {
