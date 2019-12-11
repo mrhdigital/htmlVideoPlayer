@@ -33,7 +33,7 @@ function skip() {
     //console.log(this.dataset.skip);
     //(this.dataset.skip is a string)
     //apply parseFloat method to convert into number.
-    video.currnetTime += parseFloat(this.dataset.skip);
+    video.currentTime += parseFloat(this.dataset.skip);
 }
 
 function handleRangeUpdate() {
